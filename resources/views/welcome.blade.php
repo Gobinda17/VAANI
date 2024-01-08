@@ -14,7 +14,6 @@
         {{-- @livewire('HomePage') --}}
         <h1>
             <a href="/homepage" wire:navigate>Click Me!!</a>
-            
         </h1>
     </div>
     @livewireScripts
