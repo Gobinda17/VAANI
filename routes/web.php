@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\HomePage;
+use App\Livewire\Demo;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/homepage', HomePage::class);
-Route::get('/homepage', function() {
-    return view('livewire/home-page');
-});
+Route::get('/homepage', HomePage::class);
+Route::get('/demo', Demo::class);
