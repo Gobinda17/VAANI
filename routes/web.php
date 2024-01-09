@@ -21,3 +21,11 @@ Route::get('/', function () {
 
 Route::get('/homepage', HomePage::class);
 Route::get('/demo', Demo::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
